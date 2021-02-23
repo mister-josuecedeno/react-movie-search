@@ -101,7 +101,7 @@ small {
 
 .card-list {
   margin-top: 2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 80vh;
   overflow: scroll;
 }
