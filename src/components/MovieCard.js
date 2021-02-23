@@ -16,7 +16,7 @@ export default function MovieCard({ movie }) {
         <p>
           <small>RATING: {movie.vote_average}</small>
         </p>
-        <p className='card--desc'>{movie.overview}</p>
+        <p className='card--desc line-clamp'>{movie.overview}</p>
       </div>
     </div>
   );

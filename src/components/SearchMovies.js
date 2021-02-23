@@ -23,20 +23,20 @@ export default function SearchMovies() {
   return (
     <Fragment>
       <form className='form' onSubmit={searchMovies}>
-        <label htmlFor='query' className='label'>
-          Movie Name
-        </label>
-        <input
-          type='text'
-          className='input'
-          name='query'
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder='Type movie title here'
-        ></input>
-        <button className='button' type='submit'>
-          Search
-        </button>
+        <div className='form-group'>
+          <label htmlFor='query' className='label'></label>
+          <input
+            type='text'
+            className='input'
+            name='query'
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder='Search by movie title'
+          ></input>
+          <button className='button' type='submit'>
+            <i className='fas fa-search'></i>
+          </button>
+        </div>
       </form>
 
       <div className='card-list'>
